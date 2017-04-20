@@ -2,9 +2,38 @@ cards
     - Id
     - Name
     - Second_name
-    - Type
+    - Nature (Super/Extreme)
+    - Type (PHY/STR/AGL/TEQ/INT)
     - Hp
     - Atk
     - Def
-    - Special_fk
-    - Passive_skill_fk
+    - cost
+    - Leader_skill [FK]
+    - Special_fk [FK]
+    - Passive_skill_fk [FK]
+
+leader_skills
+    - Id
+    - Effect
+    - Type (nuke/buff/ki/buff+ki)
+
+special
+    - Id
+    - Name
+    - Effects (250 caratteri, racchiude tutti gli effetti di tutti i livelli di special)
+    
+passive_skills
+    - Id
+    - Name
+    - Effect
+    - Type (nuke/buff/ki)
+    
+link_skills
+    - Id
+    - Name
+    - Effect
+    
+MM_cards_link_skill
+    - Id
+    - Id_card [FK]
+    - Id_link_skill [FK]
