@@ -2,17 +2,31 @@
     $scope.nome="Utente";
 }*/
 
-var app=angular.module('app', [])
+var app=angular.module('app', ['ngRoute'])
+
+.config(function($routeProvider){
+	$routeProvider.when('/', {
+		templateUrl:'assets/view/parziali/index.php'
+	});
+	$routeProvider.when('/card-list', {
+		controller:'cardListCtrl',
+		templateUrl:'assets/view/parziali/user/lista-carte.php'
+	})
+})
+
 
 .controller('appCtrl', ['$scope', function($scope){
 //app.controller('appCtrl', function($scope){
+
 	$scope.nome=null;
 
 	$scope.clickHandler=function(){
 		window.alert("Bottone premuto");
 	};
 
+}])
 
+.controller('cardListCtrl', ['$scope', function($scope){
 	$scope.carte = [
 		{
 			nome:'Goku Super Saiyan 2',

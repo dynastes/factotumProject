@@ -1,0 +1,10 @@
+cards
+    - Id
+    - Name
+    - Second_name
+    - Type
+    - Hp
+    - Atk
+    - Def
+    - Special_fk
+    - Passive_skill_fk
