@@ -1,0 +1,32 @@
+/*function appCtrl($scope){ //lo scope prende tutte le variabili ng-model scritti nella pagina
+    $scope.nome="Utente";
+}*/
+
+var app=angular.module('app', [])
+
+.controller('appCtrl', ['$scope', function($scope){
+//app.controller('appCtrl', function($scope){
+	$scope.nome=null;
+
+	$scope.clickHandler=function(){
+		window.alert("Bottone premuto");
+	};
+
+
+	$scope.carte = [
+		{
+			nome:'Goku Super Saiyan 2',
+			titolo:'Tanta potenza poca potenza',
+			hp:5740,
+			atk:2500,
+			def:1240
+		},
+		{
+			nome:'Citriolo',
+			titolo:'Smangiucchiato',
+			hp:420,
+			atk:20,
+			def:40
+		}
+	];
+}]);
