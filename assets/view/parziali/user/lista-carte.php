@@ -1,5 +1,5 @@
 <div class="page-header">
-        <h2>Card list</h2>
+        <h1>Card list</h1>
 </div>
 
 <table class="table table-striped">

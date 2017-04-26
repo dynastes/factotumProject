@@ -9,7 +9,7 @@
     	<script src="assets/js/bootstrap.js" ></script>
         <script src="assets/js/controller.js"></script>
 
-        <title></title>
+        <title>Factotum Projects</title>
     </head>
 
     <body>

@@ -1,1 +1,3 @@
-<h2>INDEX 2 sdfsdfsdfsdfds</h2>
+<div class="page-header">
+        <h1>Home page</h1>
+</div>

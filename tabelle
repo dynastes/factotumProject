@@ -9,13 +9,15 @@ cards
     - Def
     - cost
     - Leader_skill [FK]
-    - Special_fk [FK]
-    - Passive_skill_fk [FK]
+    - Special [FK]
+    - Passive_skill [FK]
+    - Evolution [FK] (null)
+    - Pre_evolution [FK] (null)
 
 leader_skills
     - Id
     - Effect
-    - Type (nuke/buff/ki/buff+ki)
+    - Type (nuke/buff/ki/buff+ki) [FK] <-------------------
 
 special
     - Id
@@ -27,6 +29,7 @@ passive_skills
     - Name
     - Effect
     - Type (nuke/buff/ki)
+#####SONO ARRIVATO QUI
     
 link_skills
     - Id

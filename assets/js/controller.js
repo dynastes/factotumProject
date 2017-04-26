@@ -11,6 +11,9 @@ var app=angular.module('app', ['ngRoute'])
 	$routeProvider.when('/card-list', {
 		controller:'cardListCtrl',
 		templateUrl:'assets/view/parziali/user/lista-carte.php'
+	});
+	$routeProvider.when('/add-card', {
+		templateUrl:'assets/view/parziali/admin/aggiungi-carta.php'
 	})
 })
 
@@ -27,6 +30,12 @@ var app=angular.module('app', ['ngRoute'])
 }])
 
 .controller('cardListCtrl', ['$scope', function($scope){
+
+
+
+
+
+
 	$scope.carte = [
 		{
 			nome:'Goku Super Saiyan 2',
